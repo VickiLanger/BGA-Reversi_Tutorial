@@ -31,3 +31,5 @@ I am following the aforementioned tutorial and I'm at this point:
 I've added the div here: https://github.com/VickiLanger/BGA-Reversi_Tutorial/blob/3b57546d31e94de24e1cf80ea83dc7c349aefc6b/tutorialreversicheesepuppy_tutorialreversicheesepuppy.tpl#L29
 
 and the css here: https://github.com/VickiLanger/BGA-Reversi_Tutorial/blob/3b57546d31e94de24e1cf80ea83dc7c349aefc6b/tutorialreversicheesepuppy.css#L51
+
+As expected (because I've made no changes), it's still not working, but I do know what the problem is. The HTML and the CSS are there, but the get request for the image is coming back as a 404. 
