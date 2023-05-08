@@ -45,13 +45,18 @@
 /* Note: you must not use any @import directive */
 
 /********* You can start writing your CSS below this line: **********/
-div {
-  border-style: 10px ridge red;
-}
 #board {
-  width: 536px;
-  height: 528px;
-  background-image: url('img/board.jpg');
+    width: 536px;
+    height: 528px;
+    background-image: url('img/board.jpg');
+    position: relative;
+}
+
+.square {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    background-color: orange;
 }
 
 /*
