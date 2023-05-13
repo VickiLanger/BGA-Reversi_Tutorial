@@ -1,7 +1,7 @@
 
 -- ------
 -- BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
--- TutorialReversiCheesePuppy implementation : © <Your name here> <Your email address here>
+-- TutorialReversiCheesePuppy implementation : © Vicki Langer vicki_langer@hotmail.com
 -- 
 -- This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
 -- See http://en.boardgamearena.com/#!doc/Studio for more information.
@@ -17,6 +17,13 @@
 
 -- Note: The database schema is created from this file when the game starts. If you modify this file,
 --       you have to restart a game to see your changes in database.
+
+CREATE TABLE IF NOT EXISTS `board` (
+  `board_x` smallint(5) unsigned NOT NULL,
+  `board_y` smallint(5) unsigned NOT NULL,
+  `board_player` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`board_x`,`board_y`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Example 1: create a standard "card" table to be used with the "Deck" tools (see example game "hearts"):
 
